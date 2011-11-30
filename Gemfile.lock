@@ -1,0 +1,13 @@
+GEM
+  specs:
+    bit-struct (0.13.6)
+    pcaprub (0.11.0)
+    racket (1.0.9)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bit-struct
+  pcaprub
+  racket

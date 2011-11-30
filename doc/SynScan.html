@@ -1,0 +1,550 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Class: SynScan
+  
+    &mdash; Documentation by YARD 0.7.3
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  relpath = '';
+  if (relpath != '') relpath += '/';
+</script>
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <script type="text/javascript" charset="utf-8">
+      if (window.top.frames.main) document.body.className = 'frames';
+    </script>
+    
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html">Index (S)</a> &raquo; 
+    
+    
+    <span class="title">SynScan</span>
+  
+  
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a id="class_list_link" href="#">Class List</a>
+  
+    <a id="method_list_link" href="#">Method List</a>
+  
+    <a id="file_list_link" href="#">File List</a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+    
+    <iframe id="search_frame"></iframe>
+    
+    <div id="content"><h1>Class: SynScan
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName">Monitor</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">Monitor</li>
+          
+            <li class="next">SynScan</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+      <dt class="r2">Includes:</dt>
+      <dd class="r2">Racket</dd>
+      
+    
+  
+  
+  
+    <dt class="r1 last">Defined in:</dt>
+    <dd class="r1 last">syn_scan.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    <p>
+this is a threadsafe, stealth syn-scan
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+
+  
+  
+
+
+  
+  
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">- (SynScan) <strong>initialize</strong>(dst_ip, port) </a>
+    
+
+    
+  </span>
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+A new instance of SynScan.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#listen-instance_method" title="#listen (instance method)">- (Object) <strong>listen</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#next_src_port-instance_method" title="#next_src_port (instance method)">- (Object) <strong>next_src_port</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+well this gives some variation to the process so that the computers
+don&#8217;t get bored.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#open_listener-instance_method" title="#open_listener (instance method)">- (Object) <strong>open_listener</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+start capture with pcaprub.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#send-instance_method" title="#send (instance method)">- (Object) <strong>send</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  <div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <p class="signature first" id="initialize-instance_method">
+  
+    - (<tt><span class='object_link'><a href="" title="SynScan (class)">SynScan</a></span></tt>) <strong>initialize</strong>(dst_ip, port) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+A new instance of SynScan
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'syn_scan.rb', line 13</span>
+
+<span class='kw'>def</span> <span class='id initialize'>initialize</span><span class='lparen'>(</span><span class='id dst_ip'>dst_ip</span><span class='comma'>,</span> <span class='id port'>port</span><span class='rparen'>)</span>
+
+  <span class='id abort'>abort</span> <span class='const'>ERR_NEED_ROOT</span> <span class='kw'>if</span> <span class='const'>Process</span><span class='period'>.</span><span class='id uid'>uid</span> <span class='op'>!=</span> <span class='int'>0</span> <span class='comment'># care for root rights
+</span>
+  <span class='ivar'>@dst_ip</span> <span class='op'>=</span> <span class='id dst_ip'>dst_ip</span>
+  <span class='ivar'>@port</span> <span class='op'>=</span> <span class='id port'>port</span> 
+  <span class='cvar'>@@timeout</span> <span class='op'>=</span> <span class='int'>2</span>
+
+  <span class='id open_listener'>open_listener</span> <span class='comment'># ok let's start listening at first to ensure we 'hear' the response
+</span>  <span class='id send'>send</span>          <span class='comment'># send the actual syn package
+</span>  <span class='id listen'>listen</span>        <span class='comment'># wait for an answer or timeout to happen and handle the result
+</span><span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+    
+    
+      <div class="method_details first">
+  <p class="signature first" id="listen-instance_method">
+  
+    - (<tt>Object</tt>) <strong>listen</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'syn_scan.rb', line 55</span>
+
+<span class='kw'>def</span> <span class='id listen'>listen</span>
+
+  <span class='id t'>t</span> <span class='op'>=</span> <span class='int'>0</span>
+  <span class='comment'># wait for an answer or the timeout
+</span>  <span class='kw'>until</span> <span class='id data'>data</span><span class='op'>=</span><span class='ivar'>@listener</span><span class='period'>.</span><span class='id next'>next</span> <span class='kw'>or</span> <span class='id t'>t</span><span class='op'>==</span><span class='cvar'>@@timeout</span> <span class='kw'>do</span>
+    <span class='id sleep'>sleep</span> <span class='float'>0.3</span>
+    <span class='id t'>t</span> <span class='op'>+=</span> <span class='int'>1</span>
+  <span class='kw'>end</span>
+
+  <span class='kw'>return</span> <span class='kw'>if</span> <span class='id t'>t</span><span class='op'>==</span><span class='cvar'>@@timeout</span>  <span class='comment'># timeout! this does not fit to the RFCs. Should we retry it or ignore?
+</span>  
+  <span class='comment'># build a packet out of these raw data (ip starts at 14)
+</span>  <span class='id p3'>p3</span> <span class='op'>=</span> <span class='const'>L3</span><span class='op'>::</span><span class='const'>IPv4</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span><span class='id data'>data</span><span class='lbracket'>[</span><span class='int'>14</span><span class='comma'>,</span><span class='id data'>data</span><span class='period'>.</span><span class='id length'>length</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+
+  <span class='comment'># tcp lays on ip
+</span>  <span class='id p4'>p4</span> <span class='op'>=</span> <span class='const'>L4</span><span class='op'>::</span><span class='const'>TCP</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span><span class='id p3'>p3</span><span class='period'>.</span><span class='id payload'>payload</span><span class='rparen'>)</span>
+
+  <span class='comment'># evaluate whether this is what I'm waiting for 
+</span>  <span class='kw'>if</span> <span class='id p4'>p4</span><span class='period'>.</span><span class='id src_port'>src_port</span><span class='op'>==</span><span class='ivar'>@port</span> <span class='kw'>and</span> <span class='id p3'>p3</span><span class='period'>.</span><span class='id src_ip'>src_ip</span><span class='op'>==</span><span class='ivar'>@dst_ip</span> <span class='kw'>then</span>
+    <span class='id puts'>puts</span> <span class='ivar'>@port</span> <span class='kw'>if</span> <span class='id p4'>p4</span><span class='period'>.</span><span class='id flag_syn'>flag_syn</span><span class='op'>==</span><span class='int'>1</span> <span class='kw'>and</span> <span class='id p4'>p4</span><span class='period'>.</span><span class='id flag_ack'>flag_ack</span><span class='op'>==</span><span class='int'>1</span> <span class='comment'>#this is the only answer conforming to the RFCs
+</span>  <span class='kw'>else</span>
+    <span class='id listen'>listen</span> <span class='comment'>#this is not, what I'm waiting for. continue waiting!
+</span>  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="next_src_port-instance_method">
+  
+    - (<tt>Object</tt>) <strong>next_src_port</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+well this gives some variation to the process so that the computers
+don&#8217;t get bored
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+81
+82
+83</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'syn_scan.rb', line 81</span>
+
+<span class='kw'>def</span> <span class='id next_src_port'>next_src_port</span>
+  <span class='int'>1024</span> <span class='op'>+</span> <span class='id rand'>rand</span><span class='lparen'>(</span><span class='int'>65535</span> <span class='op'>-</span> <span class='int'>1024</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="open_listener-instance_method">
+  
+    - (<tt>Object</tt>) <strong>open_listener</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+start capture with pcaprub
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+27
+28
+29
+30</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'syn_scan.rb', line 27</span>
+
+<span class='kw'>def</span> <span class='id open_listener'>open_listener</span>
+  <span class='ivar'>@listener</span> <span class='op'>=</span> <span class='const'>PCAPRUB</span><span class='op'>::</span><span class='const'>Pcap</span><span class='period'>.</span><span class='id open_live'>open_live</span><span class='lparen'>(</span><span class='const'>IFACE</span><span class='comma'>,</span> <span class='int'>65535</span><span class='comma'>,</span> <span class='kw'>false</span><span class='comma'>,</span> <span class='int'>1</span><span class='rparen'>)</span>
+  <span class='ivar'>@listener</span><span class='period'>.</span><span class='id setfilter'>setfilter</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>tcp port </span><span class='embexpr_beg'>#{</span><span class='ivar'>@port</span><span class='rbrace'>}</span><span class='tstring_content'> and tcp[tcpflags] &amp; tcp-ack != 0</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="send-instance_method">
+  
+    - (<tt>Object</tt>) <strong>send</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'syn_scan.rb', line 32</span>
+
+<span class='kw'>def</span> <span class='id send'>send</span>
+  <span class='ivar'>@p</span> <span class='op'>=</span> <span class='const'>Racket</span><span class='period'>.</span><span class='id new'>new</span>
+  <span class='ivar'>@p</span><span class='period'>.</span><span class='id iface'>iface</span> <span class='op'>=</span> <span class='const'>IFACE</span>
+
+  <span class='ivar'>@p</span><span class='period'>.</span><span class='id l3'>l3</span> <span class='op'>=</span> <span class='const'>L3</span><span class='op'>::</span><span class='const'>IPv4</span><span class='period'>.</span><span class='id new'>new</span>
+  <span class='ivar'>@p</span><span class='period'>.</span><span class='id l3'>l3</span><span class='period'>.</span><span class='id src_ip'>src_ip</span> <span class='op'>=</span> <span class='const'>SRC_IP</span>
+  <span class='ivar'>@p</span><span class='period'>.</span><span class='id l3'>l3</span><span class='period'>.</span><span class='id dst_ip'>dst_ip</span> <span class='op'>=</span> <span class='ivar'>@dst_ip</span>
+  <span class='ivar'>@p</span><span class='period'>.</span><span class='id l3'>l3</span><span class='period'>.</span><span class='id protocol'>protocol</span> <span class='op'>=</span> <span class='int'>6</span>
+  <span class='ivar'>@p</span><span class='period'>.</span><span class='id l3'>l3</span><span class='period'>.</span><span class='id ttl'>ttl</span> <span class='op'>=</span> <span class='int'>64</span>
+	
+  <span class='ivar'>@p</span><span class='period'>.</span><span class='id l4'>l4</span> <span class='op'>=</span> <span class='const'>L4</span><span class='op'>::</span><span class='const'>TCP</span><span class='period'>.</span><span class='id new'>new</span>
+  <span class='ivar'>@p</span><span class='period'>.</span><span class='id l4'>l4</span><span class='period'>.</span><span class='id src_port'>src_port</span> <span class='op'>=</span> <span class='id next_src_port'>next_src_port</span>
+  <span class='ivar'>@p</span><span class='period'>.</span><span class='id l4'>l4</span><span class='period'>.</span><span class='id dst_port'>dst_port</span> <span class='op'>=</span> <span class='ivar'>@port</span>
+  <span class='ivar'>@p</span><span class='period'>.</span><span class='id l4'>l4</span><span class='period'>.</span><span class='id flag_syn'>flag_syn</span> <span class='op'>=</span> <span class='int'>1</span>
+  <span class='comment'>#p.l4.window = 2048
+</span>
+  <span class='comment'># build checksum and length fields
+</span>  <span class='ivar'>@p</span><span class='period'>.</span><span class='id l4'>l4</span><span class='period'>.</span><span class='id fix!'>fix!</span><span class='lparen'>(</span><span class='ivar'>@p</span><span class='period'>.</span><span class='id l3'>l3</span><span class='period'>.</span><span class='id src_ip'>src_ip</span><span class='comma'>,</span> <span class='ivar'>@p</span><span class='period'>.</span><span class='id l3'>l3</span><span class='period'>.</span><span class='id dst_ip'>dst_ip</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span> <span class='comment'># last param for next payload
+</span>
+  <span class='comment'># just send the packet
+</span>  <span class='ivar'>@p</span><span class='period'>.</span><span class='id sendpacket'>sendpacket</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+    
+    <div id="footer">
+  Generated on Wed Nov 30 04:03:53 2011 by 
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.7.3 (ruby-1.9.2).
+</div>
+
+  </body>
+</html>
